@@ -22,13 +22,15 @@ const MyWorkBanner3 = () => {
           <div className = "container">
              <div className = "inner-About">
              <div className="images">
-                 <div className="devPic"> 
+                 <div className="devPic">
+                 <a href="https://fjkiani.github.io/DrumsNBass/" target="_blank"> 
                    <Img fluid={data.picOne.childImageSharp.fluid}
                    imgStyle = {{
                    height: "115",
                    objectFit: "none" 
                    }}
                  />
+                 </a>
                  </div>
                  </div>
                <div class = "content">

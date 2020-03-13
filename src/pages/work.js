@@ -6,6 +6,7 @@ import MyWork from "../components/myWork";
 import MyWorkBanner from "../components/myWorkBanner";
 import MyWorkBanner2 from "../components/myWorkBanner2";
 import MyWorkBanner3 from "../components/myWorkBanner3";
+// import EmailListForm from "../components/EmailListForm";
 
 const Work = () => (
     <div>
@@ -13,6 +14,7 @@ const Work = () => (
       <MyWork/>
       <MyWorkBanner />
       <MyWorkBanner2 />
+      {/* <EmailListForm /> */}
       <MyWorkBanner3 />
   
     </div>

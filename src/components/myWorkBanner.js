@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql} from "gatsby"
 import Img from "gatsby-image"
-import Typical from 'react-typical'
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const MyWorkBanner = () => {
     const data = useStaticQuery(graphql`
@@ -23,12 +23,15 @@ const MyWorkBanner = () => {
              <div className = "inner-About">
              <div className="images">
                  <div className="devPic"> 
+                 <a href="https://fjkiani.github.io/joyinc/index.html" target="_blank"> 
+              
                    <Img fluid={data.picOne.childImageSharp.fluid}
                    imgStyle = {{
                    height: "115",
                    objectFit: "none" 
                    }}
                  />
+                   </a>
                  </div>
                  </div>
                <div class = "content">
