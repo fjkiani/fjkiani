@@ -34,7 +34,7 @@ const MyWorkBanner3 = () => {
                  </div>
                  </div>
                <div class = "content">
-                  <h3>Experience Based Travel </h3>
+                  <h3>Drum Set Made With JavaScript</h3>
                   <p>It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem Ipsum is that it has a more-or-less normal

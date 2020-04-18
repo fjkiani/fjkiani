@@ -1,4 +1,7 @@
-$font:  'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+$font:  'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, Playfair Display, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 
 
 $white: #fff;
@@ -47,6 +50,8 @@ header {
         align-items: center;
         justify-content: space-between;
         height: 80px;
+        width: 80%;
+        margin: 0 5em;
         .logo {
             a {
                 font-weight: 700;
@@ -114,6 +119,13 @@ header {
                 width: 300px;
             }
         }
+        .imageTwo {
+          width: 30em;
+          margin: 0 auto;
+          @media (max-width: 1440px) {
+              width: 300px;
+          }
+      }
     }
     .typical {
     text-align: center;
@@ -178,37 +190,25 @@ header {
         }
       }
     }
-    //   .black-box {
-    //     background: $black;
-    //     height: 418px;
-    //     width: 836px;
-    //     position: relative;
-    //     right: 0;
-    //     top: 50%;
-    //     transform: translateY(-50%);
-    //     @media (max-width: 1440px) {
-    //       width: 636px;
-    //       height: 340px;
-    //     }
-    //     .black-box h2 {
-    //         color: white;
-    //     }
-    //     &.overlay {
-    //       z-index: 7;
-    //       background: white;
-    //       mix-blend-mode: overlay;
-    //     }
-    //   }  
 }
 
 
 // aboutDj
+
+
+
+
 .video-section {
     display: flex;
     text-align: center
 }
 
 //aboutWork
+
+//pictures 
+.pictures {
+  margin-top: 10em;
+}
 
 //footer
 footer {

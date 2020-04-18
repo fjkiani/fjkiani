@@ -1,11 +1,12 @@
 import React from 'react'
 import { useStaticQuery, graphql} from "gatsby"
 import Img from "gatsby-image"
+import { Link } from "gatsby"
 
 const AboutTrain = () => {
     const data = useStaticQuery(graphql`
     query {
-        picOne: file(relativePath: { eq: "fahad5.png" }) {
+        picOne: file(relativePath: { eq: "fahad3.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -43,7 +44,7 @@ const AboutTrain = () => {
               have evolved over the years, sometimes by accident, sometimes on
               purpose (injected humour and the like). </p>
               <div className="btn-row">
-                {/* <Link to="/work">View Work</Link>     */}
+                <Link to="/work">Blog</Link>    
                   </div>
                 </div>
                 </div>
