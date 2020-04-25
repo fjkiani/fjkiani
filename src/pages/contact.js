@@ -5,10 +5,10 @@ import Header from "../components/header"
 import MyWork from "../components/myWork"
 import Form from "../components/signUpComponents/signUpForm"
 import SignUpForm from "../components/signUpComponents/signUpForm"
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 
 const Contact = () => (
   <div>
-    <Header />
     <SignUpForm />
   </div>
 )

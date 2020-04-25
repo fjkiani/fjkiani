@@ -3,12 +3,11 @@ import { useStaticQuery, graphql} from "gatsby"
 import Img from "gatsby-image"
 import Image from "gatsby-image"
 import SEO from '../components/seo'
-import Header from "../components/header"
+import Contents from "../components/contentComponents/Contents"
 import styled from 'styled-components'
 import Layout from '../components/layout'
 import '../styles/styles2.scss'
-
-
+import Header from "../components/header"
 
 
 
@@ -37,9 +36,10 @@ const Images = ({dat}) => {
   
      return (
        <div>
+         <Header/>
             <div className="banner">       
             <div className = "container">
-            <Header/>
+      
             <div className="pictures">
                 <div className = "row">
                     <div className="imageTwo">
@@ -65,7 +65,6 @@ const Images = ({dat}) => {
         title="About"
         keywords={[`Hire Developer`, `Hire Designer`, `React Developer`]}
       />
-      <Header />
       <div className="about">
         <div className="inner">
           <div className="heading"><h3>
@@ -161,7 +160,7 @@ const Images = ({dat}) => {
           </p>
         </div>
         </div>
-        
+        <Contents />
     </Layout>
         </div>
         

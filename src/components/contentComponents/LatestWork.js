@@ -1,6 +1,6 @@
 import React from 'react'
 import Content from './Content'
-import {graphql, useStaticQuery} from 'gatsby'
+import {graphql, useStaticQuery, Link} from 'gatsby'
 import styles from './courses.css'
 
 
@@ -9,7 +9,7 @@ import styles from './courses.css'
 
 
 const query = graphql `{
-    allStrapiContents(sort: {fields: published, order: DESC} limit: 3) {
+    allStrapiContents(sort: {fields: published, order: DESC}) {
       nodes {
         url
         title
@@ -28,7 +28,7 @@ const query = graphql `{
   `
 
 
-function Contents() {
+function LatestWork () {
     // pass the query
     //get the nodes, rename them content and assign value to allStrapiContent
     const data = useStaticQuery(query)
@@ -39,6 +39,7 @@ function Contents() {
     
     return (
         <section className="items">
+  
         <div className="center">
         {
         filteredData.map(item => {
@@ -46,9 +47,9 @@ function Contents() {
         })
     } 
         </div>
-
+      <Link to="/courses"> All Work </Link>
         </section>
     )
 }
 
-export default Contents
+export default LatestWork

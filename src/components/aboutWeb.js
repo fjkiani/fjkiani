@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 const AboutWeb = () => {
     const data = useStaticQuery(graphql`
     query {
-        picOne: file(relativePath: { eq: "fahad4.png" }) {
+        picOne: file(relativePath: { eq: "fahad4.5.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -23,16 +23,7 @@ const AboutWeb = () => {
              <div className = "inner-About">
                <div class = "content">
                   <h3>I bring ideas to life</h3>
-                  <p>It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using ‘Content here,
-              content here’, making it look like readable English. Many desktop
-              publishing packages and web page editors now use Lorem Ipsum as
-              their default model text, and a search for ‘lorem ipsum’ will
-              uncover many web sites still in their infancy. Various versions
-              have evolved over the years, sometimes by accident, sometimes on
-              purpose (injected humour and the like). </p>
+                  <p>Hi there, My name is Fahad J. Kiani and I bring ideas to life. </p>
               <div className="btn-row">
                 <Link to="/about">About Me</Link>    
                   </div>

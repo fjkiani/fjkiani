@@ -25,10 +25,11 @@ const Banner = () => {
                     {/* <div className="main-text"> I Am <br></br>Fahad J. Kiani</div> */}
                     <div className="imageOne">
                       <Img fluid={data.picOne.childImageSharp.fluid} 
-                      height = "111%"
-                      object-fit = "none"/>
+                      // height = "111%"
+                      // object-fit = "none"
+                      />
                     </div>
-                    <br></br>
+<hr></hr>
                 </div>
                 {/* <div className="scroll">
                     <span>Learn More </span>

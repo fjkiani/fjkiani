@@ -7,6 +7,7 @@ import Header from "../components/header"
 import styled from 'styled-components'
 import Layout from '../components/layout'
 import '../styles/styles2.scss'
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 
 
 
@@ -37,9 +38,10 @@ const Images = ({dat}) => {
   
      return (
        <div>
+               <Header />
             <div className="banner">       
             <div className = "container">
-            <Header/>
+           
             <div className="pictures">
                 <div className = "row">
                     <div className="imageTwo">
@@ -66,7 +68,6 @@ const Images = ({dat}) => {
         title="About"
         keywords={[`Hire Developer`, `Hire Designer`, `React Developer`]}
       />
-      <Header />
       <div className="about">
         <div className="inner">
           <div className="heading"><h3>

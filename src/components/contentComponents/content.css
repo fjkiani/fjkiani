@@ -1,23 +1,19 @@
-.content2 {
+.course {
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
   background: var(--mainWhite);
-  /* display: flex; */
 }
-.content:hover {
+.course:hover {
   box-shadow: var(--darkShadow);
 }
 .course h3 {
   font-size: 1rem;
 }
 
-.imgContainer {
+.img-container {
   position: relative;
-  object-fit: none;
   background: var(--primaryColor);
   transition: var(--mainTransition);
-  width: 100%;
-
 }
 .img {
   transition: var(--mainTransition);
@@ -51,13 +47,12 @@
 
 .footer {
   padding: 1.1rem 1rem 1.3rem 1rem;
-  text-align: center;
+  text-align: left;
   background: var(--mainWhite);
 }
 .footer h3 {
   text-transform: capitalize;
   font-size: 1.3rem;
-  text-align: center;
   margin-bottom: 0;
 }
 .footer p {
@@ -72,5 +67,9 @@
 }
 .text {
   padding-top: 9px;
-  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: red;
 }
