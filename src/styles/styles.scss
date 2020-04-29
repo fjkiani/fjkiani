@@ -34,7 +34,7 @@ body {
 
     @media(max-width: 1280px) {
         width: 976px;
-        min-width: 976px; 
+        min-width: 0px; 
     }
 
     @media(max-width: 400px) {
@@ -88,7 +88,8 @@ header {
                         margin-right: 1em;
                     }
                     @media(max-width: 600px) {
-                      margin: 0px 11px;
+                      // margin: 5px 15px;
+                      font-size: 6px;
                   }
                 }  
 
@@ -105,7 +106,7 @@ header {
     align-items: center;
     background-color: $white;
     position: relative;
-    margin: 10em 0;
+    margin: 7em 0;
 
     .row {
         position: relative;
@@ -136,6 +137,9 @@ header {
             @media (max-width: 1440px) {
                 width: 300px;
             }
+            @media(max-width: 600px) {
+              width: 200px;
+          }
         }
     
         .imageTwo {
@@ -181,13 +185,15 @@ header {
 // }
 //aboutWeb 
 .aboutDev {
-    padding: 34px;
+    padding: 0 15px;
     position: relative;
     .inner-About {
     display: flex;
     justify-content: center;
     @media(max-width: 600px) {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      margin-left: 3em;
   }
     .content {
         width: 30%;
@@ -302,6 +308,10 @@ footer {
   }
   
 
-
+// Work Page
+.latestAbout {
+  display: flex;
+  flex-direction: column;
+}
 
   

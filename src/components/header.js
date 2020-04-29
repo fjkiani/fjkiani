@@ -5,6 +5,7 @@ import logo from "../images/fjk2.png"
 import { FaCartArrowDown } from "react-icons/fa";
 
 
+
 const Header = () => (
  
   <header>

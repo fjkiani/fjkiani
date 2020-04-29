@@ -1,24 +1,25 @@
 import React from "react"
-
-//
-
-// Socials
-// import twitter from "../images/twitter.svg"
-import instagram from "../images/instagram.svg"
-
+import logo from "../images/fjk1.jpg"
+import styles from "../styles/footer.css"
+import icons from "./SocialLinks"
 const Footer = () => {
   return (
-    <footer>
-      <div className="footer">
-        <div className="inner">
-          <span>© 2019 Fahad J. Kiani</span>
-          <div className="socials">
-            <a href="/">
-              <img src={instagram} alt="Instagram" />
+    <footer className="footer">
+      <div className="icons">
+        {icons.map(item => {
+          return (
+            <a key={item.id} href={item.url} className={styles.icon}>
+              {item.image}
             </a>
-          </div>
-          <span>fahad@me.com</span>
-        </div>
+          )
+        })}
+      </div>
+      <div className="info">
+        © {new Date().getFullYear()} Fahad J. Kiani All rights reserved. Built
+        with
+        <a href="https://www.gatsbyjs.org/" className="link">
+          Gatsby
+        </a>
       </div>
     </footer>
   )

@@ -58,6 +58,12 @@
   display: flex;
   justify-content: space-around;
   color: #132f3e;
+  @media(max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 3em;
+}
   ul {
     margin-top: 75px;
     padding: none;

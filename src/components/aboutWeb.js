@@ -18,7 +18,7 @@ const AboutWeb = () => {
 
  
     return (
-        <div className="aboutDev">
+        <div className="aboutTrain aboutDev">
           <div className = "container">
              <div className = "inner-About">
                <div class = "content">
@@ -42,7 +42,9 @@ const AboutWeb = () => {
             </div>
             <div className="black-box"><h2></h2></div>
             <div className="black-box overlay"></div>
+            <hr></hr>
         </div>
+
     )
 }
 

@@ -1,7 +1,10 @@
 import React from 'react'
 import Content from './Content'
 import {graphql, useStaticQuery, Link} from 'gatsby'
-import styles from './courses.css'
+import styles from '../../styles/content.css'
+import Title from "./Title"
+import Button from 'react-bootstrap/Button'
+
 
 
 
@@ -9,11 +12,9 @@ import styles from './courses.css'
 
 
 const query = graphql `{
-    allStrapiContents(sort: {fields: published, order: DESC}) {
+    allStrapiContents(sort: {fields: published, order: DESC} limit: 3) {
       nodes {
         url
-        title
-        info
         image {
           childImageSharp {
             fluid(maxWidth: 300) {
@@ -39,7 +40,7 @@ function LatestWork () {
     
     return (
         <section className="items">
-  
+        <Title title="Latest Projects"></Title>
         <div className="center">
         {
         filteredData.map(item => {
@@ -47,7 +48,10 @@ function LatestWork () {
         })
     } 
         </div>
-      <Link to="/courses"> All Work </Link>
+     
+
+        <Link to="/work" className="btn"> All Work </Link>
+        <hr></hr>
         </section>
     )
 }

@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import Image from "gatsby-image"
 import SEO from '../components/seo'
 import Contents from "../components/contentComponents/Contents"
+import LatestWork from "../components/contentComponents/Contents"
 import styled from 'styled-components'
 import Layout from '../components/layout'
 import '../styles/styles2.scss'

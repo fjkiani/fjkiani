@@ -22,13 +22,6 @@ const AboutDj = () => {
         <div className="aboutDev">
           <div className = "container">
              <div className = "inner-About">
-               <div class = "content">
-                  <h3>Play good music</h3>
-                  <p>DJ'ing. </p>
-              <div className="btn-row">
-              <Link to="/dj"> DJK</Link>
-                  </div>
-                </div>
                 <div className="images">
                  <div className="devPic"> 
                    <Img fluid={data.picOne.childImageSharp.fluid}
@@ -39,6 +32,13 @@ const AboutDj = () => {
                  />
                  </div>
                  </div>
+                 <div class = "content">
+                  <h3>Play good music</h3>
+                  <p>DJ'ing. </p>
+              <div className="btn-row">
+              <Link to="/dj"> DJK</Link>
+                  </div>
+                </div>
                 </div>
             </div>
             <div className="black-box"><h2></h2></div>

@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import { createGlobalStyle } from 'styled-components'
-import Header from "./header.js"
+import Header from "./header"
+import Footer from "./footer"
 
 const GlobalStyle = createGlobalStyle`
 @media only screen and (max-width: 480px) {
@@ -18,6 +19,7 @@ const Layout = ({ children }) => {
       {/* <Header></Header> */}
 
       {children}
+      <Footer/>
     
     </main>
   )
