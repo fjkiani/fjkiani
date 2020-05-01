@@ -1,14 +1,14 @@
 import React from 'react'
-import { useStaticQuery, graphql} from "gatsby"
-import Img from "gatsby-image"
+import {graphql, useStaticQuery} from 'gatsby'
+import {Nav} from 'react-bootstrap';
 import Image from "gatsby-image"
 import SEO from '../components/seo'
-import Contents from "../components/contentComponents/Contents"
-import LatestWork from "../components/contentComponents/Contents"
-import styled from 'styled-components'
+import LatestWork from "../components/contentComponents/LatestWork"
 import Layout from '../components/layout'
 import '../styles/styles2.scss'
 import Header from "../components/header"
+
+
 
 
 
@@ -161,8 +161,15 @@ const Images = ({dat}) => {
           </p>
         </div>
         </div>
-        <Contents />
-    </Layout>
+        <LatestWork/>
+
+        <section className="items">
+         <div className="center btn">
+         <Nav.Link href="https://drive.google.com/file/d/1iGhdet8NKmOWwYX0Uz62gw4fPHQP_Mc2/view?usp=sharing" target="_blank">My Resume</Nav.Link>
+
+       </div>
+    </section>
+      </Layout>
         </div>
         
     )

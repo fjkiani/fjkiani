@@ -40,8 +40,6 @@ const AboutTrain = () => {
                 </div>
                 </div>
             </div>
-            <div className="black-box"><h2></h2></div>
-            <div className="black-box overlay"></div>
         </div>
     )
 }

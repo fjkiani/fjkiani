@@ -1,8 +1,7 @@
 import { Link } from "gatsby"
-import React, {Component} from "react"
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import React from "react"
+import {Nav} from 'react-bootstrap';
 import logo from "../images/fjk2.png"
-import { FaCartArrowDown } from "react-icons/fa";
 
 
 
@@ -12,7 +11,7 @@ const Header = () => (
     <div className="container">
       <div className="inner-header">
        <div className="logo">
-        <Link to="/"><img src={logo}></img></Link>
+        <Link to="/"><img src={logo} alt="logo"></img></Link>
       </div>
       <div className="navigation">
       <Nav>

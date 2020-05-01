@@ -19,7 +19,7 @@ const AboutDj = () => {
 
  
     return (
-        <div className="aboutDev">
+        <div className="aboutTrain aboutDev">
           <div className = "container">
              <div className = "inner-About">
                 <div className="images">
@@ -33,16 +33,15 @@ const AboutDj = () => {
                  </div>
                  </div>
                  <div class = "content">
-                  <h3>Play good music</h3>
-                  <p>DJ'ing. </p>
+                  <h3>I Play good music</h3>
+                  <p>By DJ'ing. </p>
               <div className="btn-row">
               <Link to="/dj"> DJK</Link>
                   </div>
                 </div>
                 </div>
             </div>
-            <div className="black-box"><h2></h2></div>
-            <div className="black-box overlay"></div>
+    
         </div>
     )
 }

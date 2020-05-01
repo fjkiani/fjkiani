@@ -1,13 +1,11 @@
 import React from 'react'
-import { useStaticQuery, graphql} from "gatsby"
-import Img from "gatsby-image"
+import { useStaticQuery, graphql, Link} from "gatsby"
 import Image from "gatsby-image"
 import SEO from '../components/seo'
 import Header from "../components/header"
-import styled from 'styled-components'
 import Layout from '../components/layout'
 import '../styles/styles2.scss'
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import DjkContents from "../components/djkComponents/DjkContents"
 
 
 
@@ -94,12 +92,21 @@ const Images = ({dat}) => {
           </div>
           <span className="block" />
           <p style={{ margin: '0px 0px 40px 0' }}>
-          Music is known to cause happiness. It triggers dopamine neurotransmitters that make you feel happy. Beyond happiness, there is evidence that music can be good for your health and also drive productivity. Research shows the right tune can temper your feelings of anxiety, energize your limbs, and even boost your immune system.
+          Music is known to cause happiness. It triggers dopamine neurotransmitters that make you feel happy. </p>
+          
+         <p> Beyond happiness, there is evidence that music can be good for your health and also drive productivity, reduce anxiety, energize your limbs, and even boost your immune system.
 
 
               </p>
            </div>
         </div>  
+        <DjkContents/>
+
+        <section className="items">
+         <div className="center">
+            <Link to="/about" className="btn"> Learn About FJK </Link>
+        </div>
+    </section>
     </Layout>
         </div>
         

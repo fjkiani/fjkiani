@@ -23,8 +23,8 @@ const AboutWeb = () => {
              <div className = "inner-About">
                <div class = "content">
                   <h3>I bring ideas to life</h3>
-                  <p>Hi there, My name is Fahad J. Kiani and I bring ideas to life. </p>
-              <div className="btn-row">
+                  <p>Hi there, My name is Fahad J. Kiani and I bring ideas to life.</p>
+              <div  className="btn-row">
                 <Link to="/about">About Me</Link>    
                   </div>
                 </div>
@@ -40,8 +40,6 @@ const AboutWeb = () => {
                  </div>
                 </div>
             </div>
-            <div className="black-box"><h2></h2></div>
-            <div className="black-box overlay"></div>
             <hr></hr>
         </div>
 

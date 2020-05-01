@@ -1,20 +1,18 @@
 import React from 'react'
 import Content from './Content'
-import {graphql, useStaticQuery, Link} from 'gatsby'
+import {graphql, useStaticQuery} from 'gatsby'
 import styles from '../../styles/content.css'
 import Title from "./Title"
-import Button from 'react-bootstrap/Button'
 
 
 
-
-//export the query from graphql
 
 
 const query = graphql `{
     allStrapiContents(sort: {fields: published, order: DESC} limit: 3) {
       nodes {
         url
+        title
         image {
           childImageSharp {
             fluid(maxWidth: 300) {
@@ -40,7 +38,7 @@ function LatestWork () {
     
     return (
         <section className="items">
-        <Title title="Latest Projects"></Title>
+        <Title title="My Latest Projects"></Title>
         <div className="center">
         {
         filteredData.map(item => {
@@ -48,10 +46,6 @@ function LatestWork () {
         })
     } 
         </div>
-     
-
-        <Link to="/work" className="btn"> All Work </Link>
-        <hr></hr>
         </section>
     )
 }

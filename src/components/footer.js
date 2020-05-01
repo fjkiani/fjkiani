@@ -1,5 +1,4 @@
 import React from "react"
-import logo from "../images/fjk1.jpg"
 import styles from "../styles/footer.css"
 import icons from "./SocialLinks"
 const Footer = () => {
@@ -15,8 +14,8 @@ const Footer = () => {
         })}
       </div>
       <div className="info">
-        © {new Date().getFullYear()} Fahad J. Kiani All rights reserved. Built
-        with
+        © {new Date().getFullYear()} Built by Fahad J. Kiani. 
+        <p>#SupportOpenSource.</p>
         <a href="https://www.gatsbyjs.org/" className="link">
           Gatsby
         </a>

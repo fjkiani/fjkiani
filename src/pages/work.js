@@ -2,8 +2,9 @@ import React from "react"
 import Layout from "../components/layout"
 import MyWork from "../components/myWork"
 import Header from "../components/header"
+import {Link} from 'gatsby'
 import Contents from "../components/contentComponents/Contents"
-import MyWorkBanner from "../components/MyWorkBanner"
+
 
 
 
@@ -13,8 +14,11 @@ const Courses = () => {
     <Header/>
     <MyWork/>
     <Contents/>
-    <MyWorkBanner/>
- 
+    <section className="items">
+    <div className="center">
+    <Link to="/about" className="btn"> About FJK </Link>
+    </div>
+    </section>
     </Layout>
   )
 }

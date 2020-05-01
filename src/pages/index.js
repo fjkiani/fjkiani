@@ -1,12 +1,11 @@
 import React from "react"
 import '../styles/styles.scss'
 import Header from "../components/header"
-// import Navbar from "../components/Nav.js/index.js.js.js"
+import {Link} from 'gatsby'
 import Banner from "../components/banner"
 import AboutWeb from "../components/aboutWeb"
 import AboutTrain from "../components/aboutTrain"
 import AboutDj from "../components/aboutDj"
-import VideoSection from "../components/videoSection"
 import Footer from "../components/footer"
 import MyWork from "../components/myWork";
 import LatestWork from "../components/contentComponents/LatestWork"
@@ -26,6 +25,13 @@ const IndexPage = () => (
     <hr></hr>
      <MyWork/>
     <LatestWork/>
+
+  <section className="items">
+    <div className="center">
+    <Link to="/work" className="btn"> View All Work </Link>
+    </div>
+  </section>
+
     <Footer/>
     
 

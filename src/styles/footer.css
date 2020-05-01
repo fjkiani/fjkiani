@@ -1,7 +1,6 @@
 .footer {
     padding: 2rem;
-    color: var(--mainWhite);
-    background: black;
+    background: white;
     display: flex;
     flex-direction: column;
   }

@@ -1,7 +1,6 @@
 import React from 'react'
 import Content from './Content'
 import {graphql, useStaticQuery} from 'gatsby'
-import styles from './contents.css'
 import Title from "./Title"
 
 
@@ -42,7 +41,7 @@ function Contents() {
     return (
         <section className="items courses">
         <Title title="All of my Projects"></Title>
-        <h2></h2>
+
 
         <div className="center">
         {
