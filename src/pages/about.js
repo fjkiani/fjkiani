@@ -4,9 +4,12 @@ import {Nav} from 'react-bootstrap';
 import Image from "gatsby-image"
 import SEO from '../components/seo'
 import LatestWork from "../components/contentComponents/LatestWork"
+import Achievements from "../components/achievementsComponents/Achievements"
 import Layout from '../components/layout'
 import '../styles/styles2.scss'
 import Header from "../components/header"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
@@ -43,12 +46,12 @@ const Images = ({dat}) => {
       
             <div className="pictures">
                 <div className = "row">
-                    <div className="imageTwo">
+                    <div className="imageTwo" >
                       <Image fixed={data.fixed.childImageSharp.fixed}>
                       </Image>
                     </div>
                     <hr></hr>
-                    <div className="imageTwo">
+                    <div className="imageTwo" data-aos="fade-up" >
                       <Image fluid={data.fluid.childImageSharp.fluid}>
                       </Image>
                     </div>
@@ -68,7 +71,7 @@ const Images = ({dat}) => {
       />
       <div className="about">
         <div className="inner">
-          <div className="heading"><h3>
+          <div className="heading" data-aos="fade-in" ><h3>
            About FJK</h3>
           </div>
           <span className="block" />
@@ -76,7 +79,7 @@ const Images = ({dat}) => {
             Hello there, My name is Fahad J. Kiani. I pride myself on being
             able to turn an idea into a product and bring it to life.
           </p>
-          <div className="heading"><h3>
+          <div className="heading" data-aos="fade-in"><h3>
            Experience</h3>
           </div>
           <span className="block" />
@@ -87,7 +90,7 @@ const Images = ({dat}) => {
            projects</h3>
           </div> */}
           <span className="block" />
-          <div className="heading"><h3>
+          <div className="heading" data-aos="fade-in"><h3>
            Education</h3>
           </div>
           <span className="block" />
@@ -100,7 +103,7 @@ const Images = ({dat}) => {
           <p style={{ margin: '0px 0px 40px 0' }}>
            Software Engineering cohort grauduate from per scholas new york.
           </p>
-          <div className="heading"><h3>
+          <div className="heading" data-aos="fade-in"><h3>
            My Stack</h3>
           </div>
           <span className="block" />
@@ -117,7 +120,7 @@ const Images = ({dat}) => {
             Currently working with Gatsby.js
           </p>
           <p style={{ textAlign: 'center' }}>Under the hood:</p>
-          <div className="skillList">
+          <div className="skillList" data-aos="fade-up" >
             <ul>
               <b>Programming Languages</b>
               <li>JavaScript</li>
@@ -143,11 +146,11 @@ const Images = ({dat}) => {
               <li>Virtual DJ</li>
             </ul>
           </div>
-          <div className="heading"><h3>
+          <div className="heading" data-aos="fade-in"><h3>
            What I can help you with?</h3>
           </div>
           <span className="block" />
-          <p styleName="paragraps">
+          <p styleName="paragraphs">
           building a product that you want to scale to customers globally     
           <br/><br/>
           An enabler for keeping the team feeling positioned for success
@@ -162,6 +165,8 @@ const Images = ({dat}) => {
         </div>
         </div>
         <LatestWork/>
+        <hr/>
+        <Achievements/>
 
         <section className="items">
          <div className="center btn">

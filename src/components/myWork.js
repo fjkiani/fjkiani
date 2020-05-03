@@ -1,6 +1,8 @@
 import React from 'react'
 import { useStaticQuery, graphql} from "gatsby"
 import Img from "gatsby-image"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const MyWork = () => {
     const data = useStaticQuery(graphql`
@@ -20,7 +22,7 @@ const MyWork = () => {
         <div className="banner">
             <div className = "container">
                 <div className = "row">
-                    <div className="imageOne">
+                    <div className="imageOne" data-aos="fade-in">
                       <Img fluid={data.picOne.childImageSharp.fluid}>
                       </Img>
                     </div>
@@ -29,7 +31,7 @@ const MyWork = () => {
                 {/* <div className="scroll">
                     <span>Learn More </span>
                 </div> */}
-                  <div className="fixed-misc">Web Developer || Vlogger || Coach || DJ 
+                  <div className="fixed-misc">Web Developer || Engineer || Coach || DJ 
                 </div>
             </div>
         </div>

@@ -1,6 +1,8 @@
 import React from 'react'
 import { useStaticQuery, graphql} from "gatsby"
 import Img from "gatsby-image"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Banner = () => {
@@ -8,7 +10,7 @@ const Banner = () => {
     query {
         picOne: file(relativePath: { eq: "fahad2.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 200) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -23,19 +25,15 @@ const Banner = () => {
             <div className = "container">
                 <div className = "row">
                     {/* <div className="main-text"> I Am <br></br>Fahad J. Kiani</div> */}
-                    <div className="imageOne">
+                    <div className="imageOne" data-aos="fade-in">
                       <Img fluid={data.picOne.childImageSharp.fluid} 
                       // height = "111%"
                       // object-fit = "none"
                       />
                     </div>
-<hr></hr>
+                    <hr></hr>
                 </div>
-                {/* <div className="scroll">
-                    <span>Learn More </span>
-                </div> */}
-                  <div className="fixed-misc">Web Developer || Vlogger || Coach || DJ 
-                </div>
+             
 
                 
               

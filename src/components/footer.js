@@ -12,9 +12,15 @@ const Footer = () => {
             </a>
           )
         })}
+
       </div>
+      
+      
       <div className="info">
+
+        <br/>
         © {new Date().getFullYear()} Built by Fahad J. Kiani. 
+        <br />
         <p>#SupportOpenSource.</p>
         <a href="https://www.gatsbyjs.org/" className="link">
           Gatsby
