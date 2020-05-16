@@ -27,7 +27,7 @@ body {
     width: 1640px;
     min-width: 1640px;
     margin: 3em auto;
-    @media(min-width: 1440px) {
+    @media(max-width: 1440px) {
         width: 1280px;
         min-width: 1280px; 
     }
@@ -57,14 +57,17 @@ header {
         align-items: center;
         justify-content: space-between;
         height: 80px;
-        width: 80%;
+        width: 100%;
         margin: 0 5em;
         @media(min-width: 800px) {
           display: flex;
+          width: 80%;
       }  
       @media(max-width: 600px) {
         display: contents;
+        width: 60%;
     }
+    
         .logo {
             a {
                 font-weight: 700;
@@ -89,7 +92,8 @@ header {
                     }
                     @media(max-width: 600px) {
                       // margin: 5px 15px;
-                      font-size: 6px;
+                      font-size: 4px;
+                      margin: 0 20px;
                   }
                 }  
 
@@ -106,7 +110,7 @@ header {
     align-items: center;
     background-color: $white;
     position: relative;
-    margin: 7em 0;
+    margin: 8em 0;
 
     .row {
         position: relative;

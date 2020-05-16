@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-function SEO({ description, lang, meta, keywords, title }) {
+function SEO({  title, meta, lang,
+      keywords,
+      description }) {
   return (
     <StaticQuery
       query={detailsQuery}
@@ -88,8 +90,8 @@ const detailsQuery = graphql`
     site {
       siteMetadata {
         title
-        description
         author
+        description
       }
     }
   }

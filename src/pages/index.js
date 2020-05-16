@@ -9,14 +9,17 @@ import AboutDj from "../components/aboutDj"
 import Footer from "../components/footer"
 import MyWork from "../components/myWork";
 import LatestWork from "../components/contentComponents/LatestWork"
-
-
-// import Contact from "./contact"
+import SEO from "../components/seo"
 
 
 
-const IndexPage = () => (
+const IndexPage = ({data}) => (
+
+
   <div>
+
+    <SEO title="Home" keywords={[`fahadkiani`, `fahad`, `dj fahad`,`Freelance Web Developer in New York`, `Freelance Web Developer in New Jersey`, `Web Design`, `Get help building a website`, `Javascript Developer`, `UI UX Designer`, `Fahad Kiani`, `Fahad J Kiani`, `Fjkiani`, `Build a website`, `Hire someone to build a website`, `Software Engineer`,`ik pakistan tours`, `Hire A Product Manager`, `DJ Kiani`, `DJK`, `#Fjkiani`, `#DJK`, `Hire A DJ`]} 
+    />
     <Header/>
     <Banner />
     <AboutWeb />
@@ -26,9 +29,10 @@ const IndexPage = () => (
      <MyWork/>
     <LatestWork/>
 
+
   <section className="items">
     <div className="center">
-    <Link to="/work" className="btn"> View All Work </Link>
+    <Link to="/work" className="btn" data-aos="fade-up"> View All Work </Link>
     </div>
   </section>
 

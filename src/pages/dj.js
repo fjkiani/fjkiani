@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { useStaticQuery, graphql, Link} from "gatsby"
 import Image from "gatsby-image"
 import SEO from '../components/seo'
@@ -6,6 +6,8 @@ import Header from "../components/header"
 import Layout from '../components/layout'
 import '../styles/styles2.scss'
 import DjkContents from "../components/djkComponents/DjkContents"
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 
 
@@ -33,21 +35,30 @@ const getImages = graphql `
 const Images = ({dat}) => {
   const data = useStaticQuery(getImages)
   console.log(data)
+
+  useEffect(() => {
+    AOS.init({
+    duration : 2000})
+}, [])
   
      return (
        <div>
-               <Header />
+               <SEO
+        title="DJ"
+        keywords={[`Hire a Dj`, `hire dj`, `hire a dj near me`, `hire dj for wedding`, `hire a dj for wedding`, `Dj's in New York`, `Dj's in New Jersey`, `Hire a good dj`, `good dj's near me`, `edm dj's`, `hire a dj for corporate event`, `corporate event dj's`, `dj kiani`, `fahad kiani`, `#DJK`, `DJ K`, `wedding dj's near me`, `wedding dj`, `wedding dj's`, `Hire a dj for a party`, `DJ's near me`, `virtual dj`, `covid-19 dj`, `hire a virtual dj`, `affordable dj`]}
+        />
+            <Header />
             <div className="banner">       
             <div className = "container">
            
             <div className="pictures">
                 <div className = "row">
-                    <div className="imageTwo">
+                    <div className="imageTwo" >
                       <Image fluid={data.fluid1.childImageSharp.fluid}>
                       </Image>
                     </div>
                     <hr></hr>
-                    <div className="imageTwo">
+                    <div className="imageTwo" data-aos="fade-in">
                       <Image fluid={data.fluid.childImageSharp.fluid}>
                       </Image>
                     </div>
@@ -57,47 +68,42 @@ const Images = ({dat}) => {
                 {/* <div className="scroll">
                     <span>Learn More </span>
                 </div> */}
-                  <div className="fixed-misc">Engineer || Blogger || Coach || DJ 
+                  <div className="fixed-misc"> Web Developer || Engineer || Coach  || DJ  
                 </div>
             </div>
         </div>
       <Layout>
-      <SEO
-        title="About"
-        keywords={[`Hire Developer`, `Hire Designer`, `React Developer`]}
-      />
       <div className="about">
         <div className="inner">
-          <div className="heading"><h3>
+          <div className="heading" data-aos="fade-in"><h3>
            About DJK</h3>
-          </div>
+         
           <span className="block" />
           <p>
             Hi there, My name is DJ Kiani. I take pride in creating special moments with Music <br/> <br/>
-            
           </p>
-          <div className="heading"><h3>
+          </div>
+
+          <div className="heading" data-aos="fade-in" ><h3>
            My Approach </h3>
           </div>
           <span className="block" />
-          <p style={{ margin: '0px 0px 40px 0' }}>
-           Play music that causes euphoria   
-          </p>
-          {/* <div className="heading"><h3>
-           projects</h3>
-          </div> */}
-          <span className="block" />
-          <div className="heading"><h3>
-           logic </h3>
+          <div data-aos="fade-in"><p>
+           Play music that causes euphoria </p>
           </div>
           <span className="block" />
-          <p style={{ margin: '0px 0px 40px 0' }}>
+          <div className="heading" data-aos="fade-in" ><h3>
+           logic </h3>
+          
+          <span className="block" />
+          <p>
           Music is known to cause happiness. It triggers dopamine neurotransmitters that make you feel happy. </p>
           
          <p> Beyond happiness, there is evidence that music can be good for your health and also drive productivity, reduce anxiety, energize your limbs, and even boost your immune system.
 
 
-              </p>
+                </p>
+              </div>
            </div>
         </div>  
         <DjkContents/>

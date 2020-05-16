@@ -33,3 +33,9 @@
     color: var(--darkGrey);
   }
   
+  .footerNav {
+    margin:1em;
+  }
+  .nav a {
+    margin: 5px;
+  }

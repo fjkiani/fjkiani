@@ -14,13 +14,13 @@ export default [
     url: "https://github.com/fjkiani",
     image: <FaGithubSquare className="github-icon icon" />,
   },
-  {
-    id: Math.random(),
-    url: "https://www.instagram.com/fjkiani/",
-    image: <FaInstagramSquare 
-    target="_blank"
-    className="instagram-icon icon" />,
-  },
+  // {
+  //   id: Math.random(),
+  //   url: "https://www.instagram.com/fjkiani/",
+  //   image: <FaInstagramSquare 
+  //   target="_blank"
+  //   className="instagram-icon icon" />,
+  // },
   {
     id: Math.random(),
     url: "https://www.linkedin.com/in/fjkiani/",
@@ -33,10 +33,10 @@ export default [
     image: <FaMediumM 
     className="medium-icon icon" />,
   },
-  {
-    id: Math.random(),
-    url: "#",
-    image: <FaYoutube 
-    className="youtube-icon icon" />,
-  },
+  // {
+  //   id: Math.random(),
+  //   url: "#",
+  //   image: <FaYoutube 
+  //   className="youtube-icon icon" />,
+  // },
 ]

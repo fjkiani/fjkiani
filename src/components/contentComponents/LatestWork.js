@@ -13,9 +13,10 @@ const query = graphql `{
       nodes {
         url
         title
+        info
         image {
           childImageSharp {
-            fluid(maxWidth: 300) {
+            fluid {
                 ...GatsbyImageSharpFluid_withWebp
             }
           }

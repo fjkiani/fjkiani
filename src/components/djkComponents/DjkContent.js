@@ -1,17 +1,13 @@
 import React from 'react'
 import Image from 'gatsby-image'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 
 
 // accessing the items as props from Contents through destructuring 
 
 const DjkContent = ({title, url, image, info}) => {
-   AOS.init({
-    duration : 2000
-  })
-  
+ 
    
     //pass the fluid prop to image
     const mainImage = image.childImageSharp.fluid
@@ -39,8 +35,6 @@ const DjkContent = ({title, url, image, info}) => {
             </div>
             </div>
         </div>
-      <div className="black-box"><h2></h2></div>
-      <div className="black-box overlay"></div>
     </div>
 
     )

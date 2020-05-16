@@ -34,7 +34,7 @@ function DjkContents() {
     
     return (
         <section className="items courses">
-        <Title title="All of my Projects"></Title>
+        <Title title="Recent Projects"></Title>
 
         <div className="center">
         {

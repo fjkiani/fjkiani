@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { useStaticQuery, graphql} from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
@@ -6,7 +6,14 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
+
 const AboutDj = () => {
+
+  useEffect(() => {
+    AOS.init({
+    duration : 2000})
+}, [])
+
     const data = useStaticQuery(graphql`
     query {
         picOne: file(relativePath: { eq: "djFahad.jpg" }) {
@@ -38,7 +45,7 @@ const AboutDj = () => {
                   <h3>I Play good music</h3>
                   <p>By DJ'ing. </p>
               <div className="btn-row">
-              <Link to="/dj"> DJK</Link>
+              <Link to="/dj"> About DJK</Link>
                   </div>
                 </div>
                 </div>

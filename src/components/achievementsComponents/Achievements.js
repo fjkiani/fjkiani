@@ -1,18 +1,16 @@
 import React from 'react'
-import AchievementContent from './Achievement'
 import {graphql, useStaticQuery} from 'gatsby'
-import styles from '../contentComponents/contents.css'
 import Title from "../contentComponents/Title"
 import Achievement from './Achievement';
 
 const query = graphql `{
-    allStrapiAchievements {
+    allStrapiAchievements (sort: {fields: date, order: DESC} limit: 3) {
           nodes {
             url
             title
             image {
               childImageSharp {
-                fluid(maxWidth: 300) {
+                fluid {
                     ...GatsbyImageSharpFluid_withWebp
               }
             }

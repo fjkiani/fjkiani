@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
 import {Nav} from 'react-bootstrap';
 import Image from "gatsby-image"
@@ -17,6 +17,7 @@ import 'aos/dist/aos.css';
 
 const getImages = graphql `
 {
+  
     fixed: file(relativePath: {eq: "fahad3.5.jpg" }) {
       childImageSharp {
         fixed (height: 400) {
@@ -35,11 +36,18 @@ const getImages = graphql `
   }
   `
 const Images = ({dat}) => {
+
+  useEffect(() => {
+    AOS.init({
+    duration : 2000})
+}, [])
+
   const data = useStaticQuery(getImages)
   // console.log(data)
   
      return (
        <div>
+    <section>
          <Header/>
             <div className="banner">       
             <div className = "container">
@@ -60,116 +68,144 @@ const Images = ({dat}) => {
                 {/* <div className="scroll">
                     <span>Learn More </span>
                 </div> */}
-                  <div className="fixed-misc">Web Developer || Engineer || Coach || DJ 
+                  <div className="fixed-misc"> Web Developer || Engineer || Coach  || DJ 
                 </div>
             </div>
         </div>
+        </section>
+
+
       <Layout>
       <SEO
         title="About"
-        keywords={[`Hire Developer`, `Hire Designer`, `React Developer`]}
+        keywords={[`hire a web expert`, `fahad`, `dj fahad`,`Freelance Web Developer in New York`, `Freelance Web Developer in New Jersey`, `Web Design`, `Get help building a website`, `Javascript Developer`, `UI UX Designer`, `Fahad Kiani`, `Fahad J Kiani`, `Fjkiani`, `Build a website`, `Hire someone to build a website`, `Software Engineer`,`Visit Pakistan`, `Hire A Product Manager`, `DJ Kiani`, `DJK`, `#Fjkiani`, `#DJK`, `Hire A DJ`]} 
       />
       <div className="about">
         <div className="inner">
+        <div className="innerContent">
           <div className="heading" data-aos="fade-in" ><h3>
            About FJK</h3>
           </div>
           <span className="block" />
-          <p style={{ margin: '0px 0px 40px 0' }}>
-            Hello there, My name is Fahad J. Kiani. I pride myself on being
-            able to turn an idea into a product and bring it to life.
-          </p>
-          <div className="heading" data-aos="fade-in"><h3>
-           Experience</h3>
+          <div data-aos="fade-up">
+          <p>
+            Hi there, My name is Fahad J. Kiani.
+          <br/><br/><hr/>
+              <b> I help businesses, content creaters and entrepreneurs bring their vision to life  </b> </p>
+          <hr></hr>
+              </div>
+             <span className="block" />
+          </div>     
+
+        <div className="innerContent">
+          <div className="heading" data-aos="fade-up">
+            <h3>My Specialization</h3>
+              <span className="block" />
+                 <p>I build websites and applications that are fast, realiable and SEO optimized using tech-stacks that make things easy
+               </p>
+               <hr></hr>
           </div>
-          <span className="block" />
-          <p style={{ margin: '0px 0px 40px 0' }}>
-          A well-rounded solution-oriented Engineer experienced in delivering measurable results in product, marketing, support, business and Software development
-          </p>
-          {/* <div className="heading"><h3>
-           projects</h3>
-          </div> */}
-          <span className="block" />
-          <div className="heading" data-aos="fade-in"><h3>
-           Education</h3>
+        <span className="block" />
+        </div>
+
+        <div className="innerContent">
+          <div className="heading" data-aos="fade-up">
+            <h3>My Education</h3>
+             <span className="block" />
+               <p>City university of new york, john jay college</p>
+               <p>Bachelors Of Science in Computer Science with a Minor in biology</p>
+               <p>Software Engineering cohort grauduate from per scholas new york 
+               </p>
+               <hr></hr>
+            </div>
           </div>
-          <span className="block" />
-          <p style={{ margin: '0px 0px 40px 0' }}>
-           City university of new york, john jay college 
-          </p>
-          <p style={{ margin: '0px 0px 40px 0' }}>
-          Bachelors Of Science with a double Major in Information Technology and Network Security. Minor in biology 
-          </p>
-          <p style={{ margin: '0px 0px 40px 0' }}>
-           Software Engineering cohort grauduate from per scholas new york.
-          </p>
-          <div className="heading" data-aos="fade-in"><h3>
-           My Stack</h3>
+        <span className="block" />  
+
+        <div className="innerContent">
+          <div className="heading" data-aos="fade-up">
+             <h3> My Stack</h3>
+              <span className="block" />
+               <p> unique frameworks that deliver exceptional user-experiences 
+              </p>
+            </div>
+
+          <div className="current" data-aos="fade-up">
+             <p>My mission is to deliver products that don't age or break
+             <hr/>
+              </p>
+              <p>Under the hood:</p>
           </div>
-          <span className="block" />
-          <p style={{ margin: '0px 0px 40px 0' }}>
-           unique frameworks that deliver exceptional user-experiences 
-          </p>
-          <p
-            style={{
-              textAlign: 'center',
-              margin: '0px 0px 40px 0',
-              fontWeight: 700,
-            }}
-          >
-            Currently working with Gatsby.js
-          </p>
-          <p style={{ textAlign: 'center' }}>Under the hood:</p>
+
           <div className="skillList" data-aos="fade-up" >
-            <ul>
-              <b>Programming Languages</b>
+            <ul className="listItems">
+              <b> Languages</b>
               <li>JavaScript</li>
-              <li>Java (OOP)</li>
+              <li>Java</li>
               <li>C++</li>
             </ul>
-            <ul>
+            <ul className="listItems">
               <b>Frameworks</b>
               <li>React</li>
-              <li>Node.js</li>
               <li>Gatsby.js</li>
+            </ul>
+            <ul className="listItems">
+              <b>Backend</b>
+              <li>Node.js</li>
               <li>Express</li>
             </ul>
-            <ul>
-              <b>Data Analysis</b>
-              <li>SQL</li>
-              <li>MongoDB</li>
-            </ul>
-            <ul>
-              <b> Creativity </b>
-              <li>Photoshop</li>
-              <li>Figma</li>
-              <li>Virtual DJ</li>
-            </ul>
+
+            </div>
           </div>
-          <div className="heading" data-aos="fade-in"><h3>
-           What I can help you with?</h3>
+          <hr/>
+          <span className="block" />  
+
+
+         <div className="innerContent">
+          <div className="heading" data-aos="fade-up"><h3>
+           What can I help you with?</h3>
           </div>
           <span className="block" />
-          <p styleName="paragraphs">
-          building a product that you want to scale to customers globally     
+          <div data-aos="fade-in">
+          <p>
+          Help you build you a product that you can scale to customers globally     
           <br/><br/>
-          An enabler for keeping the team feeling positioned for success
+          Develop you an E-commerce application 
           <br/><br/>
-          grow and retain acquisition for customers      
+          Create you a platform where you share your stories such as a blog site    
           <br/><br/> 
-          guide vision of the product
+          Help you launch your business site
           <br/><br/> 
-          web and software developement
-          <br/><br/>
           </p>
+          <div className="current" data-aos="fade-up">
+              <p>My Expertise:</p>
+          </div>
+
+          <div className="skillList" data-aos="fade-up" >
+            <ul className="listItems">
+              <b>Web Development</b>
+            </ul>
+            <ul className="listItems">
+              <b>Product Management</b>
+            </ul>
+            <ul className="listItems">
+              <b>Sales Engineering</b>
+            </ul>
+                </div>
+              <br></br>
+                <hr/>
+              </div>
+            </div>
+          </div> 
         </div>
-        </div>
+        <br></br>
+        <br></br>
+        <br></br>
         <LatestWork/>
         <hr/>
         <Achievements/>
 
         <section className="items">
-         <div className="center btn">
+         <div className="btn" data-aos="fade-up">
          <Nav.Link href="https://drive.google.com/file/d/1iGhdet8NKmOWwYX0Uz62gw4fPHQP_Mc2/view?usp=sharing" target="_blank">My Resume</Nav.Link>
 
        </div>

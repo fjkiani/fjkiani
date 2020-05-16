@@ -1,11 +1,23 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Fahad J Kiani's Website`,
+    description: `My name is Fahad Kiani and I build websites that are powerful. I help my clients bring their ideas to life through applications that are reliable, fast, user-friendly and SEO optimized. I work with content creators, athletes and small businesses looking to expand their audience`,
+    siteUrl: `https://www.fahadkiani.com/`,
+    author: `@fjkiani`
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-166273144-1",
+        head: true,
+        anonymize: true,
+        respectDNT: true,
+        pageTransitionDelay: 0,
+      },
+    },
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -25,7 +37,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/fjk1.jpg`, // This path is relative to the root of the site.
       },
     },
     {
