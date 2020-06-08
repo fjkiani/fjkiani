@@ -31,7 +31,7 @@ const AboutDj = () => {
         <div className="aboutTrain aboutDev">
           <div className = "container">
              <div className = "inner-About">
-                <div className="images">
+                {/* <div className="images">
                  <div className="devPic" data-aos="fade-in"> 
                    <Img fluid={data.picOne.childImageSharp.fluid}
                    imgStyle = {{
@@ -40,9 +40,9 @@ const AboutDj = () => {
                    }}
                  />
                  </div>
-                 </div>
-                 <div class = "content" data-aos="fade-up">
-                  <h3>I Play good music</h3>
+                 </div> */}
+                 <div class = "content" data-aos="fade-in">
+                  <h3>Play good music</h3>
                   <p>By DJ'ing. </p>
               <div className="btn-row">
               <Link to="/dj"> About DJK</Link>

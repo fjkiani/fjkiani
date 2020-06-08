@@ -29,7 +29,7 @@ const MyWork = () => {
         <div className="banner">
             <div className = "container">
                 <div className = "row">
-                    <div className="imageOne" data-aos="fade-in">
+                    <div className="imageOne work" data-aos="fade-in">
                       <Img fluid={data.picOne.childImageSharp.fluid}>
                       </Img>
                     </div>
@@ -38,8 +38,8 @@ const MyWork = () => {
                 {/* <div className="scroll">
                     <span>Learn More </span>
                 </div> */}
-                  <div className="fixed-misc">Web Developer || Engineer || Coach || DJ 
-                </div>
+                  {/* <div className="fixed-misc">Web Developer || Engineer || Coach || DJ 
+                </div> */}
             </div>
         </div>
     )

@@ -3,6 +3,7 @@
     padding: 0;
     text-align: center;
     background: var(--mainGrey);
+    width: 107%;
   }
   .center {
     width: 80vw;

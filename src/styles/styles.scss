@@ -114,6 +114,7 @@ header {
 
     .row {
         position: relative;
+        width: 100%;
         .main-text {
             font-size: 3.8rem;
             text-transform: uppercase;
@@ -134,17 +135,22 @@ header {
                 letter-spacing: 35px;
             }
         }
-    
+       
         .imageOne {
             width: 300px;
             margin: 0 auto;
             @media (max-width: 1440px) {
                 width: 300px;
+                margin: 0 auto;
             }
             @media(max-width: 600px) {
               width: 200px;
+              margin: 0 auto;
           }
         }
+        .work {
+          margin-top: -8em;
+      }
     
         .imageTwo {
           width: 30em;
@@ -322,3 +328,4 @@ footer {
 .aboutTrain {
   padding: 0 40px;
 }
+

@@ -68,8 +68,8 @@ const Images = ({dat}) => {
                 {/* <div className="scroll">
                     <span>Learn More </span>
                 </div> */}
-                  <div className="fixed-misc"> Web Developer || Engineer || Coach  || DJ 
-                </div>
+                  {/* <div className="fixed-misc"> Web Developer || Engineer || Coach  || DJ 
+                </div> */}
             </div>
         </div>
         </section>

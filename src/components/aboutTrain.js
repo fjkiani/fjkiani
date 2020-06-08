@@ -32,7 +32,7 @@ const AboutTrain = () => {
         <div className="aboutTrain aboutDev">
           <div className = "container">
              <div className = "inner-About">
-             <div className="images">
+             {/* <div className="images">
                  <div className="devPic" data-aos="fade-in"> 
                    <Img fluid={data.picOne.childImageSharp.fluid}
                    imgStyle = {{
@@ -41,16 +41,19 @@ const AboutTrain = () => {
                    }}
                  />
                  </div>
-                 </div>
-               <div class = "content" data-aos="fade-up">
-                  <h3>I Help Change lives </h3>
-                  <p>Through mindfulness, innovation and well-being</p>
+                 </div> */}
+               <div class = "content" data-aos="fade-in">
+                  <h3>I like to Inspire with Innovation </h3>
+                  <p>Through creating beautiful and and meaningful work</p>
+                  <Link to="/about">About FJK</Link>
               {/* <div className="btn-row">
               <Nav.Link href="https://our-stories.us/" target="_blank">Learn</Nav.Link>
                   </div> */}
+
                 </div>
                 </div>
             </div>
+            <hr/>
         </div>
     )
 }

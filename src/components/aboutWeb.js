@@ -23,15 +23,15 @@ const AboutWeb = () => {
         <div className="aboutTrain aboutDev">
           <div className = "container">
              <div className = "inner-About">
-               <div class = "content" data-aos="fade-up">
-                  <h3>I bring ideas to life</h3>
-                  <p>Hi there, My name is Fahad J. Kiani and I bring ideas to life.</p>
+               <div class = "content" data-aos="fade-in">
+                  <h3>Hello World</h3>
+                  <p>My name is Fahad J. Kiani. I am a Software Engineer and I like to bring ideas to life</p>
               <div className="btn-row">    
                   </div>
-                  <Link to="/about">About FJK</Link>
+                  {/* <Link to="/about">About FJK</Link> */}
                 </div>
                 <br/>
-                <div className="images">
+                {/* <div className="images">
                  <div className="devPic" data-aos="fade-in">
                    <Img fluid={data.picOne.childImageSharp.fluid}
                    imgStyle = {{
@@ -41,7 +41,7 @@ const AboutWeb = () => {
                  />
       
                  </div>
-                 </div>
+                 </div> */}
                 </div>
             </div>
             <hr></hr>
