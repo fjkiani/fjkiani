@@ -110,7 +110,7 @@ const Images = ({dat}) => {
 
         <section className="items">
          <div className="center">
-            <Link to="/about" className="btn"> Learn About FJK </Link>
+            <Link to="/fjk" className="btn"> Learn About FJK </Link>
         </div>
     </section>
     </Layout>

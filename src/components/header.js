@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import {Nav} from 'react-bootstrap';
-import logo from "../images/fjk2.png"
+import logo from "../images/fjk3.png"
 
 
 
@@ -17,8 +17,8 @@ const Header = () => (
       <Nav>
         <nav>
           <Link to="/">Home</Link>
-          <Link to="/about">FJK</Link>
-          <Link to="/dj">DJK</Link>
+          <Link to="/fjk">FJK</Link>
+          <Link to="/djk">DJK</Link>
           <Link to="/work">Work</Link>
 
           <Nav.Link href="https://our-stories.us/" target="_blank">Blog</Nav.Link>

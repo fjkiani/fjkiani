@@ -45,7 +45,7 @@ const AboutDj = () => {
                   <h3>Play good music</h3>
                   <p>By DJ'ing. </p>
               <div className="btn-row">
-              <Link to="/dj"> About DJK</Link>
+              <Link to="/djk"> About DJK</Link>
                   </div>
                 </div>
                 </div>

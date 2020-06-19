@@ -24,7 +24,7 @@ const Courses = () => {
     <Contents/>
     <section className="items">
     <div className="center">
-    <Link to="/about" className="btn"> About FJK </Link>
+    <Link to="/contact" className="btn"> Contact FJK </Link>
     </div>
     </section>
     </Layout>

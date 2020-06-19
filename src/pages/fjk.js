@@ -4,7 +4,7 @@ import {Nav} from 'react-bootstrap';
 import Image from "gatsby-image"
 import SEO from '../components/seo'
 import LatestWork from "../components/contentComponents/LatestWork"
-import Achievements from "../components/achievementsComponents/Achievements"
+// import Achievements from "../components/achievementsComponents/Achievements"
 import Layout from '../components/layout'
 import '../styles/styles2.scss'
 import Header from "../components/header"
@@ -202,7 +202,7 @@ const Images = ({dat}) => {
         <br></br>
         <LatestWork/>
         <hr/>
-        <Achievements/>
+        {/* <Achievements/> */}
 
         <section className="items">
          <div className="btn" data-aos="fade-up">

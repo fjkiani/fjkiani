@@ -45,7 +45,7 @@ const AboutTrain = () => {
                <div class = "content" data-aos="fade-in">
                   <h3>I like to Inspire with Innovation </h3>
                   <p>Through creating beautiful and and meaningful work</p>
-                  <Link to="/about">About FJK</Link>
+                  <Link to="/fjk">About FJK</Link>
               {/* <div className="btn-row">
               <Nav.Link href="https://our-stories.us/" target="_blank">Learn</Nav.Link>
                   </div> */}

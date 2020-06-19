@@ -2,8 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `Fahad J Kiani's Website`,
     description: `My name is Fahad Kiani and I build websites that are powerful. I help my clients bring their ideas to life through applications that are reliable, fast, user-friendly and SEO optimized. I work with content creators, athletes and small businesses looking to expand their audience`,
-    siteUrl: `https://www.fahadkiani.com/`,
-    author: `@fjkiani`
+    author: `@fjkiani`,
+    twitterUsername: '@fjkiani1',
+    image: "/fjk-2cae19378a2a0ae785b3c9a764ab1c0800.jpg",
+    siteUrl: `https://www.fahadkiani.com`,
   },
   plugins: [
     {
