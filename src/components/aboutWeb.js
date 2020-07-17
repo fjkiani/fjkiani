@@ -1,9 +1,5 @@
 import React from 'react'
 import { useStaticQuery, graphql} from "gatsby"
-import Img from "gatsby-image"
-import { Link } from "gatsby"
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 
 const AboutWeb = () => {
     const data = useStaticQuery(graphql`
@@ -31,17 +27,7 @@ const AboutWeb = () => {
                   {/* <Link to="/about">About FJK</Link> */}
                 </div>
                 <br/>
-                {/* <div className="images">
-                 <div className="devPic" data-aos="fade-in">
-                   <Img fluid={data.picOne.childImageSharp.fluid}
-                   imgStyle = {{
-                   height: "115",
-                   objectFit: "none" 
-                   }}
-                 />
-      
-                 </div>
-                 </div> */}
+               
                 </div>
             </div>
             <hr></hr>

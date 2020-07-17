@@ -83,34 +83,14 @@ const Images = ({dat}) => {
             Hi there, My name is DJ Kiani. I take pride in creating special moments with Music <br/> <br/>
           </p>
           </div>
-
-          <div className="heading" data-aos="fade-in" ><h3>
-           My Approach </h3>
-          </div>
-          <span className="block" />
-          <div data-aos="fade-in"><p>
-           Play music that causes euphoria </p>
-          </div>
-          <span className="block" />
-          <div className="heading" data-aos="fade-in" ><h3>
-           logic </h3>
-          
-          <span className="block" />
-          <p>
-          Music is known to cause happiness. It triggers dopamine neurotransmitters that make you feel happy. </p>
-          
-         <p> Beyond happiness, there is evidence that music can be good for your health and also drive productivity, reduce anxiety, energize your limbs, and even boost your immune system.
-
-
-                </p>
-              </div>
+       
            </div>
         </div>  
         <DjkContents/>
 
         <section className="items">
          <div className="center">
-            <Link to="/fjk" className="btn"> Learn About FJK </Link>
+            <Link to="/contact" className="btn"> Contact </Link>
         </div>
     </section>
     </Layout>

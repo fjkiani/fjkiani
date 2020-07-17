@@ -2,7 +2,6 @@ import React, {useEffect} from 'react'
 import Image from 'gatsby-image'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import styles from "../../styles/content.css"
 
 
 

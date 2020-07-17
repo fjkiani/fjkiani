@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
 import {Nav} from 'react-bootstrap';
+import { Link } from "gatsby"
 import Image from "gatsby-image"
 import SEO from '../components/seo'
 import LatestWork from "../components/contentComponents/LatestWork"
@@ -83,15 +84,15 @@ const Images = ({dat}) => {
       <div className="about">
         <div className="inner">
         <div className="innerContent">
-          <div className="heading" data-aos="fade-in" ><h3>
+          {/* <div className="heading" data-aos="fade-in" ><h3>
            About FJK</h3>
-          </div>
+          </div> */}
           <span className="block" />
           <div data-aos="fade-up">
           <p>
-            Hi there, My name is Fahad J. Kiani.
+            Hello World My name is Fahad J. Kiani.
           <br/><br/><hr/>
-              <b> I help businesses, content creaters and entrepreneurs bring their vision to life  </b> </p>
+              I architect solutions that scale through software </p>
           <hr></hr>
               </div>
              <span className="block" />
@@ -101,7 +102,18 @@ const Images = ({dat}) => {
           <div className="heading" data-aos="fade-up">
             <h3>My Specialization</h3>
               <span className="block" />
-                 <p>I build websites and applications that are fast, realiable and SEO optimized using tech-stacks that make things easy
+                 <p>Delivering customer success through modern web applications 
+               </p>
+               <hr></hr>
+          </div>
+        <span className="block" />
+        </div>
+
+        <div className="innerContent">
+          <div className="heading" data-aos="fade-up">
+            <h3>Clients I work with</h3>
+              <span className="block" />
+                 <p>small business owners, fitness trainers, influencers and content creators   
                </p>
                <hr></hr>
           </div>
@@ -114,7 +126,7 @@ const Images = ({dat}) => {
              <span className="block" />
                <p>City university of new york, john jay college</p>
                <p>Bachelors Of Science in Computer Science with a Minor in biology</p>
-               <p>Software Engineering cohort grauduate from per scholas new york 
+               <p>Software Engineering cohort graduate from per scholas new york 
                </p>
                <hr></hr>
             </div>
@@ -130,7 +142,7 @@ const Images = ({dat}) => {
             </div>
 
           <div className="current" data-aos="fade-up">
-             <p>My mission is to deliver products that don't age or break
+             <p>My mission is to deliver customer success through technical innovation
              <hr/>
               </p>
               <p>Under the hood:</p>
@@ -138,21 +150,29 @@ const Images = ({dat}) => {
 
           <div className="skillList" data-aos="fade-up" >
             <ul className="listItems">
-              <b> Languages</b>
               <li>JavaScript</li>
               <li>Java</li>
               <li>C++</li>
+              <li>SQL</li>
+              <li>APIs </li>
+      
+
+
+
             </ul>
-            <ul className="listItems">
-              <b>Frameworks</b>
+            {/* <ul className="listItems">
+              <b>Programing Frameworks</b>
               <li>React</li>
               <li>Gatsby.js</li>
+              <li>JQuery</li>
+              <li>Bootstrap</li>
             </ul>
             <ul className="listItems">
-              <b>Backend</b>
-              <li>Node.js</li>
-              <li>Express</li>
-            </ul>
+              <b>API Frameworks</b>
+              <li>REST</li>
+              <li>SOAP</li>
+              <li>GraphQL</li>
+            </ul> */}
 
             </div>
           </div>
@@ -167,49 +187,29 @@ const Images = ({dat}) => {
           <span className="block" />
           <div data-aos="fade-in">
           <p>
-          Help you build you a product that you can scale to customers globally     
+          Help scale customer success through technical architects    
           <br/><br/>
-          Develop you an E-commerce application 
+          Build software solutions 
           <br/><br/>
-          Create you a platform where you share your stories such as a blog site    
+          SEO optimization   
           <br/><br/> 
-          Help you launch your business site
+          Build solutions with external APIs
+          <br/><br/> 
+          Deploy cloud data infastructures 
           <br/><br/> 
           </p>
-          <div className="current" data-aos="fade-up">
-              <p>My Expertise:</p>
-          </div>
-
-          <div className="skillList" data-aos="fade-up" >
-            <ul className="listItems">
-              <b>Web Development</b>
-            </ul>
-            <ul className="listItems">
-              <b>Product Management</b>
-            </ul>
-            <ul className="listItems">
-              <b>Sales Engineering</b>
-            </ul>
-                </div>
-              <br></br>
+    
                 <hr/>
               </div>
             </div>
           </div> 
         </div>
-        <br></br>
-        <br></br>
-        <br></br>
-        <LatestWork/>
-        <hr/>
-        {/* <Achievements/> */}
-
         <section className="items">
-         <div className="btn" data-aos="fade-up">
-         <Nav.Link href="https://drive.google.com/file/d/1iGhdet8NKmOWwYX0Uz62gw4fPHQP_Mc2/view?usp=sharing" target="_blank">My Resume</Nav.Link>
-
-       </div>
+         <div className="center">
+            <Link to="/work" className="btn"> View my work </Link>
+        </div>
     </section>
+        <hr/>
       </Layout>
         </div>
         

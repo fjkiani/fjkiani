@@ -1,8 +1,6 @@
 import React, {useEffect} from 'react'
 import { useStaticQuery, graphql} from "gatsby"
-import Img from "gatsby-image"
 import { Link } from "gatsby"
-import {Nav} from 'react-bootstrap';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -44,7 +42,7 @@ const AboutTrain = () => {
                  </div> */}
                <div class = "content" data-aos="fade-in">
                   <h3>I like to Inspire with Innovation </h3>
-                  <p>Through creating beautiful and and meaningful work</p>
+                  <p>Through creating beautiful and meaningful work</p>
                   <Link to="/fjk">About FJK</Link>
               {/* <div className="btn-row">
               <Nav.Link href="https://our-stories.us/" target="_blank">Learn</Nav.Link>
