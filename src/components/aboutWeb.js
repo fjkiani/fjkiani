@@ -21,7 +21,7 @@ const AboutWeb = () => {
              <div className = "inner-About">
                <div class = "content" data-aos="fade-in">
                   <h3>Hello World</h3>
-                  <p>My name is Fahad J. Kiani. I am a Software Engineer and I like to bring ideas to life</p>
+                  <p>My name is Fahad J. Kiani. I am a Web Developer that likes to bring ideas to life</p>
               <div className="btn-row">    
                   </div>
                   {/* <Link to="/about">About FJK</Link> */}

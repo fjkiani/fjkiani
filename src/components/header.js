@@ -16,10 +16,10 @@ const Header = () => (
       <div className="navigation">
       <Nav>
         <nav>
-          <Link to="/">Home</Link>
           <Link to="/fjk">FJK</Link>
           <Link to="/djk">DJK</Link>
           <Link to="/work">Work</Link>
+          <Link to="/milehighfightclub">Train</Link>
 
           <Nav.Link href="https://our-stories.us/" target="_blank">Blog</Nav.Link>
 

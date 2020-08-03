@@ -30,23 +30,10 @@ const AboutTrain = () => {
         <div className="aboutTrain aboutDev">
           <div className = "container">
              <div className = "inner-About">
-             {/* <div className="images">
-                 <div className="devPic" data-aos="fade-in"> 
-                   <Img fluid={data.picOne.childImageSharp.fluid}
-                   imgStyle = {{
-                   height: "115",
-                   objectFit: "none" 
-                   }}
-                 />
-                 </div>
-                 </div> */}
                <div class = "content" data-aos="fade-in">
                   <h3>I like to Inspire with Innovation </h3>
                   <p>Through creating beautiful and meaningful work</p>
                   <Link to="/fjk">About FJK</Link>
-              {/* <div className="btn-row">
-              <Nav.Link href="https://our-stories.us/" target="_blank">Learn</Nav.Link>
-                  </div> */}
 
                 </div>
                 </div>

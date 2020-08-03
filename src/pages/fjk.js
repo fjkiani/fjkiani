@@ -92,7 +92,7 @@ const Images = ({dat}) => {
           <p>
             Hello World My name is Fahad J. Kiani.
           <br/><br/><hr/>
-              I architect solutions that scale through software </p>
+              I architect solutions that scale through software and businesses </p>
           <hr></hr>
               </div>
              <span className="block" />

@@ -6,7 +6,7 @@ import Title from "../contentComponents/Title"
 
 
 const query = graphql `{
-    allStrapiCourses {
+    allStrapiCourses (sort: {fields: published, order: DESC}) {
           nodes {
             url
             title

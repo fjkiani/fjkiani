@@ -46,18 +46,17 @@ input {
 
 input[type="submit"]{
   vertical-align: top;
-  height: 98px;
-  width: 98px;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  border-radius: 3px;
-  background: pink;
-  cursor: pointer;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #fff;
-  background: linear-gradient(45deg, #FF6C54, #FFA754);
+    height: 30px;
+    width: 93px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 3px;
+    background: black;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
 }
 
 input[type="submit"]:hover{
