@@ -75,6 +75,11 @@ a {
   color: red;
 }
 
+/* .anchors {
+  text-decoration: none;
+  color: red;
+} */
+
 .btn-white,
 .btn {
   text-transform: uppercase;

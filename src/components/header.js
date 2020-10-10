@@ -2,6 +2,8 @@ import { Link } from "gatsby"
 import React from "react"
 import {Nav} from 'react-bootstrap';
 import logo from "../images/fjk3.png"
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+
 
 
 
@@ -16,14 +18,15 @@ const Header = () => (
       <div className="navigation">
       <Nav>
         <nav>
-          <Link to="/fjk">FJK</Link>
-          <Link to="/djk">DJK</Link>
-          <Link to="/work">Work</Link>
-          <Link to="/milehighfightclub">Train</Link>
+          <AniLink paintDrip to="/" color="black" >Home</AniLink>
+          <AniLink paintDrip to="/fjk" color="black">FJK</AniLink>
+          <AniLink paintDrip to="/djkiani" color="black" >DJK </AniLink>
+          <AniLink paintDrip to="/work" color="black" >Work </AniLink>
+          {/* <Link to="/milehighfightclub">Train</Link> */}
 
           <Nav.Link href="https://our-stories.us/" target="_blank">Blog</Nav.Link>
 
-          <Link to="/contact">Contact</Link>
+          <AniLink paintDrip to="/contact" color="black">Contact</AniLink>
          </nav> 
          </Nav>    
        </div>

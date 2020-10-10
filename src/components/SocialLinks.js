@@ -3,7 +3,7 @@ import {
   FaGithubSquare,
   FaLinkedinIn,
   FaMediumM,
-  FaInstagramSquare,
+  // FaInstagramSquare,
   FaYoutube,
   
 } from "react-icons/fa"
@@ -27,13 +27,13 @@ export default [
     image: <FaMediumM 
     className="medium-icon icon" />,
   },
-  {
-    id: 4,
-    url: "https://www.instagram.com/fjkiani/",
-    image: <FaInstagramSquare 
-    target="_blank"
-    className="instagram-icon icon" />,
-  },
+  // {
+  //   id: 4,
+  //   url: "https://www.instagram.com/therealdjkiani/",
+  //   image: <FaInstagramSquare 
+  //   target="_blank"
+  //   className="instagram-icon icon" />,
+  // },
   {
     id: 5,
     url: "https://www.youtube.com/channel/UCBBGotUyECCYMx0UQtlyiHg",

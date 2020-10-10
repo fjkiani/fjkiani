@@ -5,6 +5,7 @@ import SEO from '../components/seo'
 import Header from "../components/header"
 import Layout from '../components/layout'
 import '../styles/styles2.scss'
+import '../styles/content.css'
 import DjkContents from "../components/djkComponents/DjkContents"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -80,7 +81,7 @@ const Images = ({dat}) => {
          
           <span className="block" />
           <p>
-            Hi there, My name is DJ Kiani. I take pride in creating special moments with Music <br/> <br/>
+            Hi there, My name is DJKiani. I take pride in creating special moments with Music <br/> <br/>
           </p>
           </div>
        
