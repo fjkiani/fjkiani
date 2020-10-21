@@ -8,9 +8,9 @@ const Banner = () => {
 
     const data = useStaticQuery(graphql`
     query {
-        picOne: file(relativePath: { eq: "fahad2.png" }) {
+        picOne: file(relativePath: { eq: "fahad-code.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 200) {
+          fluid(quality: 90, maxWidth: 4160) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -20,12 +20,12 @@ const Banner = () => {
 
  
     return (
-        <div className="banner">
+        <div className="banner mainPic">
               <hr></hr>
             <div className = "container">
                 <div className = "row">
                     {/* <div className="main-text"> I Am <br></br>Fahad J. Kiani</div> */}
-                    <div className="imageOne">
+                    <div className="imageThree">
                       <Img fluid={data.picOne.childImageSharp.fluid} 
                      
                       />

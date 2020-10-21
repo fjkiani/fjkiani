@@ -1,16 +1,16 @@
 import React, {useEffect} from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
-import {Nav} from 'react-bootstrap';
 import { Link } from "gatsby"
 import Image from "gatsby-image"
 import SEO from '../components/seo'
-import LatestWork from "../components/contentComponents/LatestWork"
 // import Achievements from "../components/achievementsComponents/Achievements"
 import Layout from '../components/layout'
 import '../styles/styles2.scss'
 import Header from "../components/header"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+// import BackgroundImage from 'gatsby-background-image'
+
 
 
 
@@ -19,19 +19,18 @@ import 'aos/dist/aos.css';
 const getImages = graphql `
 {
   
-    fixed: file(relativePath: {eq: "fahad3.5.jpg" }) {
+    fluid: file(relativePath: {eq: "fahad2.png"}) {
       childImageSharp {
-        fixed (height: 400) {
-          ...GatsbyImageSharpFixed
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+            
         }
       }
     }
-    fluid: file(relativePath: {eq: "thisFjk.jpg"}) {
+       fluid2: file(relativePath: {eq: "thisFjk.jpg" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid
-            
-        }
+         ...GatsbyImageSharpFluid          }
       }
     }
   }
@@ -56,12 +55,11 @@ const Images = ({dat}) => {
             <div className="pictures">
                 <div className = "row">
                     <div className="imageTwo" >
-                      <Image fixed={data.fixed.childImageSharp.fixed}>
+                      <Image fluid={data.fluid.childImageSharp.fluid}>
                       </Image>
                     </div>
-                    <hr></hr>
                     <div className="imageTwo" data-aos="fade-up" >
-                      <Image fluid={data.fluid.childImageSharp.fluid}>
+                      <Image fluid={data.fluid2.childImageSharp.fluid}>
                       </Image>
                     </div>
                     </div>
@@ -79,7 +77,7 @@ const Images = ({dat}) => {
       <Layout>
       <SEO
         title="About"
-        keywords={[`hire a web expert`, `fahad`, `dj fahad`,`Freelance Web Developer in New York`, `Freelance Web Developer in New Jersey`, `Web Design`, `Get help building a website`, `Javascript Developer`, `UI UX Designer`, `Fahad Kiani`, `Fahad J Kiani`, `Fjkiani`, `Build a website`, `Hire someone to build a website`, `Software Engineer`,`Visit Pakistan`, `Hire A Product Manager`, `DJ Kiani`, `DJK`, `#Fjkiani`, `#DJK`, `Hire A DJ`]} 
+        keywords={[`hire a web expert`, `fahad`, `dj fahad`, `dj kiani`, `hire a Web Developer in New York`, `Freelance Web Developer in New Jersey`, `Web Design`, `Get help building a website`, `Javascript Developer`, `UI UX Designer`, `Fahad Kiani`, `Fahad J Kiani`, `Fjkiani`, `Build a website`, `Hire someone to build a website`, `Software Engineer`,`Visit Pakistan`, `Hire A Product Manager`, `DJ Kiani`, `DJK`, `#Fjkiani`, `#DJK`, `Hire A DJ`]} 
       />
       <div className="about">
         <div className="inner">
@@ -89,11 +87,15 @@ const Images = ({dat}) => {
           </div> */}
           <span className="block" />
           <div data-aos="fade-up">
+       <div className="innerContent">
+          <div className="heading" data-aos="fade-up">
+            <h3>Welcome!</h3>
           <p>
             Hello World My name is Fahad J. Kiani.
           <br/><br/><hr/>
               I architect solutions that scale through software and businesses </p>
-          <hr></hr>
+                  </div>
+                </div>
               </div>
              <span className="block" />
           </div>     

@@ -39,7 +39,7 @@ function LatestWork () {
     
     return (
         <section className="items">
-        <Title title="My Latest Projects"></Title>
+        <Title title="My Latest Work"></Title>
         <div className="center">
         {
         filteredData.map(item => {

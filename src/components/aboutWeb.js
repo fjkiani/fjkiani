@@ -1,5 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql} from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+
 
 const AboutWeb = () => {
     const data = useStaticQuery(graphql`
@@ -21,16 +23,14 @@ const AboutWeb = () => {
              <div className = "inner-About">
                <div class = "content" data-aos="fade-in">
                   <h3>Hello World</h3>
-                  <p>My name is Fahad J. Kiani. I am a Web Developer that likes to bring ideas to life</p>
+                  <p>My name is Fahad J. Kiani.</p>
               <div className="btn-row">    
                   </div>
-                  {/* <Link to="/about">About FJK</Link> */}
+                  <AniLink fade to="/fjk">About FJK</AniLink>
                 </div>
-                <br/>
-               
+    
                 </div>
             </div>
-            <hr></hr>
         </div>
 
     )

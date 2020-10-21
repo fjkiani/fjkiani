@@ -41,7 +41,7 @@ const AboutDj = () => {
                  </div>
                  </div> */}
                  <div class = "content" data-aos="fade-in">
-                  <h3>Play good music</h3>
+                  <h3>I build experiences with music</h3>
                   <p>By DJ'ing. </p>
               <div className="btn-row">
               <Link to="/djk"> About DJK</Link>

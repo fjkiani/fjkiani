@@ -16,15 +16,15 @@ import 'aos/dist/aos.css'
 
 const getImages = graphql `
 {
-  fluid1: file(relativePath: {eq: "djk2.jpg" }) {
+  fluid1: file(relativePath: {eq: "dj.jpg" }) {
     childImageSharp {
-        fluid (maxWidth: 1000)  {
+        fluid (quality: 90, maxWidth: 4160)  {
         ...GatsbyImageSharpFluid
 
       }
     }
   }
-    fluid: file(relativePath: {eq: "thisDjk.jpg"}) {
+    fluid: file(relativePath: {eq: "thisDjk2.jpg"}) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid  
@@ -54,7 +54,7 @@ const Images = ({dat}) => {
            
             <div className="pictures">
                 <div className = "row">
-                    <div className="imageTwo" >
+                    <div className="imageThree" >
                       <Image fluid={data.fluid1.childImageSharp.fluid}>
                       </Image>
                     </div>

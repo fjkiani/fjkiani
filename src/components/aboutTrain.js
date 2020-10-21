@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react'
 import { useStaticQuery, graphql} from "gatsby"
-import { Link } from "gatsby"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -31,14 +30,12 @@ const AboutTrain = () => {
           <div className = "container">
              <div className = "inner-About">
                <div class = "content" data-aos="fade-in">
-                  <h3>I like to Inspire with Innovation </h3>
-                  <p>Through creating beautiful and meaningful work</p>
-                  <Link to="/fjk">About FJK</Link>
+                  <h3>I build optimized web applications </h3>
+                  <p>Using tech-stacks that are scalable, require little maintenance and fully optimized. They are designed to be scalable to your needs. </p>
 
                 </div>
                 </div>
             </div>
-            <hr/>
         </div>
     )
 }

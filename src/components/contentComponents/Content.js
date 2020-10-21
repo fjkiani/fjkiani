@@ -22,7 +22,7 @@ const Content = ({title, url, image, info}) => {
     return (
       <div className="latestWork aboutDev">
       <div className = "container">
-         <div className = "latestAbout inner-About">
+         <div className = "latestAbout inner-About aboutWork">
          <div className="images" data-aos="fade-up">
              <div className="devPic">
              <a href={url} target="_blank" rel="noopener noreferrer" > 

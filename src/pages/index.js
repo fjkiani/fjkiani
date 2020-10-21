@@ -7,6 +7,7 @@ import AboutWeb from "../components/aboutWeb"
 import AboutTrain from "../components/aboutTrain"
 import AboutDj from "../components/aboutDj"
 import Footer from "../components/footer"
+// import Services from "../components/services"
 import MyWork from "../components/myWork";
 import LatestWork from "../components/contentComponents/LatestWork"
 import SEO from "../components/seo"
@@ -25,6 +26,7 @@ const IndexPage = ({data}) => (
     <AboutWeb />
     <AboutTrain/>
     <AboutDj />
+    {/* <Services/> */}
     <hr></hr>
      <MyWork/>
     <LatestWork/>
