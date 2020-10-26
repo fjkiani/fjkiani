@@ -10,7 +10,9 @@ import Footer from "../components/footer"
 // import Services from "../components/services"
 import MyWork from "../components/myWork";
 import LatestWork from "../components/contentComponents/LatestWork"
+import Reviews from "../components/reviewsComponents/Reviews"
 import SEO from "../components/seo"
+import Services from "../components/Services"
 
 
 
@@ -26,17 +28,20 @@ const IndexPage = ({data}) => (
     <AboutWeb />
     <AboutTrain/>
     <AboutDj />
-    {/* <Services/> */}
+    <Services/>
     <hr></hr>
      <MyWork/>
     <LatestWork/>
 
 
+
   <section className="items">
     <div className="center">
-    <Link to="/work" className="btn" data-aos="fade-up"> View All Work </Link>
+    <Link to="/fjk" className="btn" data-aos="fade-up"> Learn More </Link>
     </div>
   </section>
+
+  {/* <Reviews/> */}
 
     <Footer/>
     

@@ -9,6 +9,7 @@ import '../styles/styles2.scss'
 import Header from "../components/header"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Jobs from "../components/jobComponents/jobs"
 // import BackgroundImage from 'gatsby-background-image'
 
 
@@ -64,11 +65,6 @@ const Images = ({dat}) => {
                     </div>
                     </div>
                 </div>
-                {/* <div className="scroll">
-                    <span>Learn More </span>
-                </div> */}
-                  {/* <div className="fixed-misc"> Web Developer || Engineer || Coach  || DJ 
-                </div> */}
             </div>
         </div>
         </section>
@@ -92,8 +88,7 @@ const Images = ({dat}) => {
             <h3>Welcome!</h3>
           <p>
             Hello World My name is Fahad J. Kiani.
-          <br/><br/><hr/>
-              I architect solutions that scale through software and businesses </p>
+          <br/><br/><hr/></p>
                   </div>
                 </div>
               </div>
@@ -102,113 +97,24 @@ const Images = ({dat}) => {
 
         <div className="innerContent">
           <div className="heading" data-aos="fade-up">
-            <h3>My Specialization</h3>
+            <h3>About Me</h3>
               <span className="block" />
-                 <p>Delivering customer success through modern web applications 
+                 <p>I help businesses scale through Software and Sales Engineering
                </p>
                <hr></hr>
           </div>
-        <span className="block" />
         </div>
 
-        <div className="innerContent">
-          <div className="heading" data-aos="fade-up">
-            <h3>Clients I work with</h3>
-              <span className="block" />
-                 <p>small business owners, fitness trainers, influencers and content creators   
-               </p>
-               <hr></hr>
-          </div>
-        <span className="block" />
+
+        <div className="heading" data-aos="fade-up">
+            <h3>My Experience</h3>
+       </div>   
+   </div> 
         </div>
-
-        <div className="innerContent">
-          <div className="heading" data-aos="fade-up">
-            <h3>My Education</h3>
-             <span className="block" />
-               <p>City university of new york, john jay college</p>
-               <p>Bachelors Of Science in Computer Science with a Minor in biology</p>
-               <p>Software Engineering cohort graduate from per scholas new york 
-               </p>
-               <hr></hr>
-            </div>
-          </div>
-        <span className="block" />  
-
-        <div className="innerContent">
-          <div className="heading" data-aos="fade-up">
-             <h3> My Stack</h3>
-              <span className="block" />
-               <p> unique frameworks that deliver exceptional user-experiences 
-              </p>
-            </div>
-
-          <div className="current" data-aos="fade-up">
-             <p>My mission is to deliver customer success through technical innovation
-             <hr/>
-              </p>
-              <p>Under the hood:</p>
-          </div>
-
-          <div className="skillList" data-aos="fade-up" >
-            <ul className="listItems">
-              <li>JavaScript</li>
-              <li>Java</li>
-              <li>C++</li>
-              <li>SQL</li>
-              <li>APIs </li>
-      
-
-
-
-            </ul>
-            {/* <ul className="listItems">
-              <b>Programing Frameworks</b>
-              <li>React</li>
-              <li>Gatsby.js</li>
-              <li>JQuery</li>
-              <li>Bootstrap</li>
-            </ul>
-            <ul className="listItems">
-              <b>API Frameworks</b>
-              <li>REST</li>
-              <li>SOAP</li>
-              <li>GraphQL</li>
-            </ul> */}
-
-            </div>
-          </div>
-          <hr/>
-          <span className="block" />  
-
-
-         <div className="innerContent">
-          <div className="heading" data-aos="fade-up"><h3>
-           What can I help you with?</h3>
-          </div>
-          <span className="block" />
-          <div data-aos="fade-in">
-          <p>
-          Help scale customer success through technical architects    
-          <br/><br/>
-          Build software solutions 
-          <br/><br/>
-          SEO optimization   
-          <br/><br/> 
-          Build solutions with external APIs
-          <br/><br/> 
-          Deploy cloud data infastructures 
-          <br/><br/> 
-          </p>
-    
-                <hr/>
-              </div>
-            </div>
-          </div> 
-        </div>
+        <Jobs/>
         <section className="items">
          <div className="center">
-            <Link to="/work" className="btn"> View my work </Link>
+            <Link to="/contact" className="btn"> Learn More </Link>
         </div>
     </section>
         <hr/>
