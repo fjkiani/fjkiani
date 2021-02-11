@@ -34,8 +34,8 @@ const Footer = () => {
       <Nav>
         <nav>
           <Link to="/">Home</Link>
-          <Link to="/about">FJK</Link>
-          <Link to="/dj">DJK</Link>
+          <Link to="/fjk">FJK</Link>
+          <Link to="/djkiani">DJK</Link>
           <Link to="/work">Work</Link>
 
           <Nav.Link href="https://our-stories.us/" target="_blank">Blog</Nav.Link>

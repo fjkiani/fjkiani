@@ -30,7 +30,7 @@ const AboutTrain = () => {
           <div className = "container">
              <div className = "inner-About">
                <div class = "content" data-aos="fade-in">
-                  <h3>I build optimized web applications </h3>
+                  <h3>I believe in education  </h3>
                   <p>Using tech-stacks that are scalable, require little maintenance and fully optimized. They are designed to be scalable to your needs. </p>
 
                 </div>

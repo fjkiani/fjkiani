@@ -53,7 +53,7 @@ const Jobs = ({dat}) => {
         </div>
         {/* job info */}
         <article className="job-info" >
-        <div className="fade-in" data-aos="fade-up"> 
+        <div className="fade-in" data-aos="fade-in"> 
           <h3>{position}</h3>
           <div className="company">
           <h4>{company}</h4>

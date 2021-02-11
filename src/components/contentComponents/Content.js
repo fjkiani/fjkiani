@@ -23,7 +23,7 @@ const Content = ({title, url, image, info}) => {
       <div className="latestWork aboutDev">
       <div className = "container">
          <div className = "latestAbout inner-About aboutWork">
-         <div className="images" data-aos="fade-up">
+         <div className="images" data-aos="fade-in">
              <div className="devPic">
              <a href={url} target="_blank" rel="noopener noreferrer" > 
           

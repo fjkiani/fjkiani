@@ -1,11 +1,11 @@
 import React, {useEffect} from 'react'
 import Title from "../components/Title"
 import styles from "../styles/services.module.css"
-import services from "../components/constants/services"
+import technicalServices from "../components/constants/technicalServices"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-const Services = () => {
+const TechnicalServices = () => {
 
   useEffect(() => {
     AOS.init({
@@ -16,14 +16,14 @@ const Services = () => {
   return (
     <section className={styles.services}>
     
-      <Title title="About Me" subtitle="services" />
+      <Title title="My Technical Stack" subtitle="services" />
       <div className={styles.center} data-aos="fade-in">
-        {services.map((item, index, id) => {
+        {technicalServices.map((item, index, id) => {
           return (
             <article key={index} className={styles.service}>
               <span>{item.icon}</span>
               <h4>{item.title}</h4>
-              <p className="servicesText">{item.text}</p>
+              <p className="technicalServicesText">{item.text}</p>
             </article>
 
           )
@@ -33,4 +33,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default TechnicalServices

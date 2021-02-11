@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import {Nav} from 'react-bootstrap';
-import logo from "../images/logo2.jpg"
+import logo from "../images/fjk1.jpg"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 

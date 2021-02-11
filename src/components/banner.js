@@ -8,9 +8,9 @@ const Banner = () => {
 
     const data = useStaticQuery(graphql`
     query {
-        picOne: file(relativePath: { eq: "fahad-code.jpg" }) {
+        picOne: file(relativePath: { eq: "ENGINEERING.png" }) {
         childImageSharp {
-          fluid(quality: 90, maxWidth: 4160) {
+          fluid(quality: 90, maxWidth: 5000) {
             ...GatsbyImageSharpFluid
           }
         }

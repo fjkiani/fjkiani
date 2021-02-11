@@ -13,6 +13,9 @@ import LatestWork from "../components/contentComponents/LatestWork"
 import Reviews from "../components/reviewsComponents/Reviews"
 import SEO from "../components/seo"
 import Services from "../components/Services"
+import Jobs from "../components/jobComponents/Jobs"
+import TechnicalServices from "../components/TechnicalServices"
+
 
 
 
@@ -26,18 +29,19 @@ const IndexPage = ({data}) => (
     <Header/>
     <Banner />
     <AboutWeb />
-    <AboutTrain/>
-    <AboutDj />
+     {/* <AboutTrain/> */}
+    {/* <AboutDj />  */}
     <Services/>
     <hr></hr>
-     <MyWork/>
+    <MyWork/>
     <LatestWork/>
+    <TechnicalServices/>
 
 
 
   <section className="items">
     <div className="center">
-    <Link to="/fjk" className="btn" data-aos="fade-up"> Learn More </Link>
+    <Link to="/fjk" className="btn" data-aos="fade-in"> Learn More </Link>
     </div>
   </section>
 

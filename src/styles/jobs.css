@@ -72,13 +72,14 @@ Variables
   background: transparent;
     border-color: transparent;
     text-transform: capitalize;
-    font-size: 1.05rem;
+    font-size: 10px;
     letter-spacing: var(--spacing);
-    margin: 0 -1.5rem;
+    margin: 0 5px;
+    margin: 0 -1.5re;
     -webkit-transition: var(--transition);
     transition: var(--transition);
     cursor: pointer;
-    padding: 2.0rem 0;
+    padding: 1rem 0px;
     /* line-height: 1;
 }
 
@@ -99,11 +100,11 @@ Variables
 }
 .job-info h4 {
    text-transform: uppercase;
-    color:  #336600
+   color: var(--clr-primary-5);
     ;
     /* background: black; */
     display: inline-block;
-    padding: 2.375rem 2.75rem;
+    /* padding: 2.375rem 2.75rem; */
     border-radius: var(--radius);
 }
 .job-date {

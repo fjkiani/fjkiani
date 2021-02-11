@@ -26,10 +26,12 @@ const AboutWeb = () => {
                   <p>My name is Fahad J. Kiani.</p>
               <div className="btn-row">    
                   </div>
-                  <AniLink fade to="/fjk">About FJK</AniLink>
+                  <AniLink fade to="/fjk">Learn More</AniLink>
                 </div>
+
     
                 </div>
+                
             </div>
         </div>
 

@@ -15,6 +15,7 @@ html, body {
     margin: 0;
     padding: 0; 
     overflow-x: hidden; 
+    text-transform: capitalize;
 }
 
 body {
@@ -120,7 +121,7 @@ header {
     align-items: center;
     background-color: $white;
     position: relative;
-    margin: 0em 0;
+    margin: 2em 0;
 
 
 
@@ -203,11 +204,15 @@ header {
 }
 
 .mainPic {
-   margin: 7em 0;
+    margin: 7em 45px;
     display: flex;
     align-items: center;
     background-color: $white;
     position: relative;
+    @media(max-width: 600px) {
+      margin: 5em -2px;
+      
+  }
 }
 
 // .banner2 {
@@ -236,7 +241,7 @@ header {
      h3 {
         font-weight: 700;
         text-transform: uppercase;
-        font-size: 1.8rem;
+        font-size: 15px;
         letter-spacing: .5px;
         margin: 0;
      }
@@ -353,6 +358,11 @@ footer {
   padding: 0 40px;
 }
 
+
+//services 
+.servicesText {
+  color:white;
+}
 
 
 

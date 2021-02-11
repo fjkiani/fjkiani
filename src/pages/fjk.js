@@ -9,7 +9,7 @@ import '../styles/styles2.scss'
 import Header from "../components/header"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Jobs from "../components/jobComponents/jobs"
+import Jobs from "../components/jobComponents/Jobs"
 // import BackgroundImage from 'gatsby-background-image'
 
 
@@ -59,7 +59,7 @@ const Images = ({dat}) => {
                       <Image fluid={data.fluid.childImageSharp.fluid}>
                       </Image>
                     </div>
-                    <div className="imageTwo" data-aos="fade-up" >
+                    <div className="imageTwo" data-aos="fade-in" >
                       <Image fluid={data.fluid2.childImageSharp.fluid}>
                       </Image>
                     </div>
@@ -82,9 +82,9 @@ const Images = ({dat}) => {
            About FJK</h3>
           </div> */}
           <span className="block" />
-          <div data-aos="fade-up">
+          <div data-aos="fade-in">
        <div className="innerContent">
-          <div className="heading" data-aos="fade-up">
+          <div className="heading" data-aos="fade-in">
             <h3>Welcome!</h3>
           <p>
             Hello World My name is Fahad J. Kiani.
@@ -95,18 +95,10 @@ const Images = ({dat}) => {
              <span className="block" />
           </div>     
 
-        <div className="innerContent">
-          <div className="heading" data-aos="fade-up">
-            <h3>About Me</h3>
-              <span className="block" />
-                 <p>I help businesses scale through Software and Sales Engineering
-               </p>
-               <hr></hr>
-          </div>
-        </div>
+      
 
 
-        <div className="heading" data-aos="fade-up">
+        <div className="heading" data-aos="fade-in">
             <h3>My Experience</h3>
        </div>   
    </div> 
