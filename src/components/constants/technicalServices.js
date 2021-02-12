@@ -1,6 +1,6 @@
 import React from "react"
 import { FaReact } from "react-icons/fa"
-import { DiCode } from "react-icons/di";
+import { GrGatsbyjs } from "react-icons/gr";
 import { SiJavascript } from "react-icons/si";
 import { TiHtml5 } from "react-icons/ti";
 import { SiStrapi } from "react-icons/si";
@@ -14,7 +14,7 @@ import { FaAws } from "react-icons/fa";
 export default [
   {
     id: 1,
-    icon: <DiCode />,
+    icon: <GrGatsbyjs/>,
     title: "Gatsby.js ",
     text: "Gatsby.js allows me to build sites with frameworks that are built and deployed 1000x faster",
   },

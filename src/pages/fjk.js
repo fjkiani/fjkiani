@@ -106,7 +106,7 @@ const Images = ({dat}) => {
         <Jobs/>
         <section className="items">
          <div className="center">
-            <Link to="/contact" className="btn"> Learn More </Link>
+            <Link to="/contact" className="btn"> Contact </Link>
         </div>
     </section>
         <hr/>

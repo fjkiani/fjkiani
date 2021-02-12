@@ -41,7 +41,7 @@ const Footer = () => {
           <Nav.Link href="https://our-stories.us/" target="_blank">Blog</Nav.Link>
 
           <Link to="/contact">Contact</Link>
-          <Nav.Link href="https://drive.google.com/file/d/1iGhdet8NKmOWwYX0Uz62gw4fPHQP_Mc2/view?usp=sharing" target="_blank">Resume</Nav.Link>
+          {/* <Nav.Link href="https://drive.google.com/file/d/1iGhdet8NKmOWwYX0Uz62gw4fPHQP_Mc2/view?usp=sharing" target="_blank">Resume</Nav.Link> */}
          </nav> 
          </Nav>    
        </div>
