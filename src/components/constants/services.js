@@ -9,6 +9,12 @@ import { FaRocket } from "react-icons/fa";
 
 export default [
   {
+    id: 2,
+    icon: <FaReact />,
+    title: "Sales Engineering",
+    text: "As a Sales Engineer with over 5+ years of experience in technical Sales, support and software development, I help companies and businesses scale their revenue growth ",
+  },
+  {
     id: 1,
     icon: <DiCode />,
     title: "Web Development",
@@ -20,13 +26,7 @@ export default [
     title: "Higher Technical Education ",
     text: "As a Lead Instructor for New York City Tech Talent Pipeline (City University of New York), I have taught Full-Stack Web Development to over 40 college students at College of Staten Island",
   },
- 
-  {
-    id: 2,
-    icon: <FaReact />,
-    title: "Sales Engineering",
-    text: "As a Sales Engineer with over 5+ years of experience in technical Sales, support and software development, I help companies and businesses scale their revenue growth ",
-  },
+
   {
     id: 3,
     icon: <FaRocket />,

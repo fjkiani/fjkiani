@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Fahad J. Kiani`,
-    description: `My name is Fahad Kiani and I build web applications that are full-stack, powerful and modern.`,
+    title: `JAMstack Applications by FJK`,
+    description: `My name is Fahad J. Kiani and I build web applications that are full-stack, powerful and modern.`,
     author: `@fjkiani`,
-    twitterUsername: '@fjkiani1',
-    image: "/fjk-2cae19378a2a0ae785b3c9a764ab1c0800.jpg",
-    siteUrl: `https://www.fahadkiani.com`,
+    titleTemplate:`%s | FJK`,
+    siteUrl: `https://fahadkiani.com`,
+    image: 'twitter-img.png',
   },
   plugins: [
     {

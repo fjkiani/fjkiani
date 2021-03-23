@@ -9,7 +9,7 @@ import Title from "./Title"
 
 
 const query = graphql `{
-    allStrapiContents(sort: {fields: published, order: DESC} limit: 3) {
+    allStrapiContents(sort: {fields: published, order: DESC} limit: 4) {
       nodes {
         url
         title

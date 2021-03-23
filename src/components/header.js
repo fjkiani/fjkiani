@@ -24,7 +24,7 @@ const Header = () => (
           >Home</AniLink>
           <AniLink fade to="/fjk" 
           >FJK</AniLink>
-          <AniLink fade to="/djkiani" color="black" >DJK </AniLink>
+          {/* <AniLink fade to="/djkiani" color="black" >DJK </AniLink> */}
           <AniLink  fade to="/work" >Work </AniLink>
           {/* <Link to="/milehighfightclub">Train</Link> */}
 

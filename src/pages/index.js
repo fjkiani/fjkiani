@@ -11,7 +11,7 @@ import Footer from "../components/footer"
 import MyWork from "../components/myWork";
 import LatestWork from "../components/contentComponents/LatestWork"
 import Reviews from "../components/reviewsComponents/Reviews"
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 import Services from "../components/Services"
 import Jobs from "../components/jobComponents/Jobs"
 import TechnicalServices from "../components/TechnicalServices"
@@ -41,7 +41,7 @@ const IndexPage = ({data}) => (
 
   <section className="items">
     <div className="center">
-    <Link to="/fjk" className="btn" data-aos="fade-in"> Learn More </Link>
+    <Link to="/contact" className="btn" data-aos="fade-in"> Hire Me </Link>
     </div>
   </section>
 
